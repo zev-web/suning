@@ -9,6 +9,7 @@
     document.write(`<meta name="viewport" content="width=device-width, initial-scale=${ pixelRatio },minimum-scale=${ pixelRatio },maximum-scale=${ pixelRatio }">`);
     setSize();
     window.addEventListener('resize',setSize,false);
+    window.addEventListener('orientationonchange',setSize,false);
     function setSize(){
       //获取html节点
       var html = document.getElementsByTagName('html')[0];
