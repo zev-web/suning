@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    //获取像素比
+    var pixelRatio =1/window.devicePixelRatio;
+    //通过js动态设置视口(viewport)
+    document.write(`<meta name="viewport" content="width=device-width, initial-scale=${ pixelRatio },minimum-scale=${ pixelRatio },maximum-scale=${ pixelRatio }">`);
+    setSize();
+    window.addEventListener('resize',setSize,false);
+    function setSize(){
+      //获取html节点
+      var html = document.getElementsByTagName('html')[0];
+      //获取屏幕宽度
+      var width = html.getBoundingClientRect().width;
+      // 屏幕宽度 / 固定数值 = 基准值
+      html.style.fontSize = width / 16 + 'px';
+    }
+  </script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+  <!-- 固定定位元素内容中有input的话，触发键盘之后会导致固定定位错位 -->
+<header class="header-box">
+  <a href="" class="btn-type"></a>
+  <div class="search-box">
+    <form class="search-form">
+      <i class="ico-search"></i>
+      <input type="text" class="search-input" placeholder="魅族note6">
+    </form>
+  </div>
+  <a href="" class="shop-car"></a>
+</header>
+<section class="wrap">
+  <ul class="banner">
+    <li class="item">
+      <img src="img/banner.jpg" alt="">
+    </li>
+  </ul>
+  <nav class="nav clearfix">
+    <a href="" class="nav-item">
+      <img src="img/ico-nav.jpg" alt="">
+      <strong class="nav-title">大聚惠</strong>
+    </a>
+    <a href="" class="nav-item">
+      <img src="img/ico-nav.jpg" alt="">
+      <strong class="nav-title">大聚惠</strong>
+    </a>
+    <a href="" class="nav-item">
+      <img src="img/ico-nav.jpg" alt="">
+      <strong class="nav-title">大聚惠</strong>
+    </a>
+    <a href="" class="nav-item">
+      <img src="img/ico-nav.jpg" alt="">
+      <strong class="nav-title">大聚惠</strong>
+    </a>
+    <a href="" class="nav-item">
+      <img src="img/ico-nav.jpg" alt="">
+      <strong class="nav-title">大聚惠</strong>
+    </a>
+    <a href="" class="nav-item">
+      <img src="img/ico-nav.jpg" alt="">
+      <strong class="nav-title">大聚惠</strong>
+    </a>
+    <a href="" class="nav-item">
+      <img src="img/ico-nav.jpg" alt="">
+      <strong class="nav-title">大聚惠</strong>
+    </a>
+    <a href="" class="nav-item">
+      <img src="img/ico-nav.jpg" alt="">
+      <strong class="nav-title">大聚惠</strong>
+    </a>
+    <a href="" class="nav-item">
+      <img src="img/ico-nav.jpg" alt="">
+      <strong class="nav-title">大聚惠</strong>
+    </a>
+    <a href="" class="nav-item">
+      <img src="img/ico-nav.jpg" alt="">
+      <strong class="nav-title">大聚惠</strong>
+    </a>
+  </nav>
+  <div class="suning-tt">
+    <div class="tt-title"></div>
+    <div class="tt-line"></div>
+    <div class="tt-list">
+      <a href="" class="item">分分钟KO宋仲基，撩妹"时"力派</a>
+      <a href="" class="item">火爆小短裤，穿出最精致的你~</a>
+    </div>
+  </div>
+  <div class="shoping-type">
+    <div class="type-top">
+      <a href="" class="big-img">
+        <img src="img/shoping-1.jpg" alt="">
+      </a>
+      <a href="" class="sub-img">
+        <img src="img/shoping-2.jpg" alt="">
+      </a>
+      <a href="" class="sub-img">
+        <img src="img/shoping-2.jpg" alt="">
+      </a>
+    </div>
+    <div class="type-bottom clearfix">
+      <a href="" class="bottom-item">
+        <img src="img/shoping-3.jpg" alt="">
+      </a>
+      <a href="" class="bottom-item">
+        <img src="img/shoping-3.jpg" alt="">
+      </a>
+      <a href="" class="bottom-item">
+        <img src="img/shoping-3.jpg" alt="">
+      </a>
+      <a href="" class="bottom-item">
+        <img src="img/shoping-3.jpg" alt="">
+      </a>
+      <a href="" class="bottom-item">
+        <img src="img/shoping-3.jpg" alt="">
+      </a>
+      <a href="" class="bottom-item">
+        <img src="img/shoping-3.jpg" alt="">
+      </a>
+      <a href="" class="bottom-item">
+        <img src="img/shoping-3.jpg" alt="">
+      </a>
+      <a href="" class="bottom-item">
+        <img src="img/shoping-3.jpg" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="suning-qg">
+    <header class="head">
+      <div class="head-left">
+        <h3 class="title"></h3>
+        <div class="time-box">
+          <span class="time-name">
+            20点场
+          </span>
+          <div class="update-time">
+            <span class="time-item">03</span>
+            <span class="time-ico">:</span>
+            <span class="time-item">54</span>
+            <span class="time-ico">:</span>
+            <span class="time-item tips">20</span>
+          </div>
+        </div>
+      </div>
+      <div class="head-right">
+        <a href="" class="more">
+          吃货上新季
+        </a>
+        <i class="ico-more"></i>
+      </div>
+    </header>
+    <div class="shoping-box">
+      <ul class="shoping-list">
+        <li class="list-item">
+          <a href="" class="item-img">
+            <img src="img/shoping-4.jpg" alt="">
+          </a>
+          <div class="item-bottom">
+            <strong class="price">￥15.90</strong>
+            <del class="oldprice">￥56.00</del>
+            <div class="zhekou">
+              <span class="big-font">5.<span>8</span>折</span>
+            </div>
+          </div>
+
+        </li>
+        <li class="list-item">
+          <a href="" class="item-img">
+            <img src="img/shoping-4.jpg" alt="">
+          </a>
+          <div class="item-bottom">
+            <strong class="price">￥15.90</strong>
+            <del class="oldprice">￥56.00</del>
+            <div class="zhekou">
+              <span class="big-font">5.<span>8</span>折</span>
+            </div>
+          </div>
+
+        </li>
+        <li class="list-item">
+          <a href="" class="item-img">
+            <img src="img/shoping-4.jpg" alt="">
+          </a>
+          <div class="item-bottom">
+            <strong class="price">￥15.90</strong>
+            <del class="oldprice">￥56.00</del>
+            <div class="zhekou">
+              <span class="big-font">5.<span>8</span>折</span>
+            </div>
+          </div>
+
+        </li>
+        <li class="list-item">
+          <a href="" class="item-img">
+            <img src="img/shoping-4.jpg" alt="">
+          </a>
+          <div class="item-bottom">
+            <strong class="price">￥15.90</strong>
+            <del class="oldprice">￥56.00</del>
+            <div class="zhekou">
+              <span class="big-font">5.<span>8</span>折</span>
+            </div>
+          </div>
+
+        </li>
+        <li class="list-item">
+          <a href="" class="item-img">
+            <img src="img/shoping-4.jpg" alt="">
+          </a>
+          <div class="item-bottom">
+            <strong class="price">￥15.90</strong>
+            <del class="oldprice">￥56.00</del>
+            <div class="zhekou">
+              <span class="big-font">5.<span>8</span>折</span>
+            </div>
+          </div>
+
+        </li>
+        <li class="list-item">
+          <a href="" class="item-img">
+            <img src="img/shoping-4.jpg" alt="">
+          </a>
+          <div class="item-bottom">
+            <strong class="price">￥15.90</strong>
+            <del class="oldprice">￥56.00</del>
+            <div class="zhekou">
+              <span class="big-font">5.<span>8</span>折</span>
+            </div>
+          </div>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<script>
+
+</script>
+</body>
+</html>
